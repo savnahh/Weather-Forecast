@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+  
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("pexels-magda-ehlers-2114014.png");
+  background-size: cover;
+  background-position: center;
+}
+  
+.weather-widget {
+  width: 500px;
+  margin: 28px auto;
+  padding: 20px;
+  padding-bottom: 90px;
+  background: linear-gradient(#D27685, #9E4784, #66347F);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+  border-radius: 30px;
+}
+
+
+.search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input{
+  border: 0;
+  outline: 0;
+  padding: 10px ;
+  flex: 1;
+  margin-left: 80px;
+  margin-right: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  background-color: lightcyan;
+  color: black;
+}
+
+.search button{
+  border: 0;
+  outline: 0;
+  margin-right: 80px;
+  background-color: rgb(233, 240, 240);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search button img{
+  width: 18px;
+}
+
+h1 {
+  font-size: 40px;
+  color: black;
+}
+  
+.weather-forecast {
+  display: none;
+  margin-top: 20px;
+  position: relative;
+}
+  
+h2 {
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+  
+p{
+  font-size: 20px;
+  margin: 0 0 5px;
+}
+  
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-top: 35px;
+}
+
+.col{
+  align-items:center;
+  text-align: left;
+}
+  
+.col img{
+  width: 70px;
+  margin-right: 6px;
+  margin-left: 30px
+}
+  
+#humidity #windspeed{
+  font-size: 100px;
+}
+
+.history-button {
+  background-color:#b15884;
+  color: black;
+  padding: 20px 20px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  right: 90px;
+  font-weight: bold;
+  border-radius: 15px;
+  margin-top: 12px;
+  font-family: auto;
+}
+
+.history-button:hover {
+  background-color: #D27685;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon-32x32.png">
+</head>
+<body>
+  <div class="background">
+    <div class="weather-widget">
+      <h1>Weather Forecast App</h1>
+        <div class="search">
+          <input type="text" id="city-input" placeholder="Enter a city name">
+          <button id="search-btn"><img src="search-removebg-preview.png" alt="weather"></button>
+        </div>
+        <div class="weather-forecast">
+          <h2 id="city-name"></h2>
+          <p id="day-and-date"></p>
+          <div id="weather-icon"></div>
+          <p id="weather-condition"></p>
+          <p id="temperature"></p>
+          <p id="rainfall"></p>
+          <div class="detail">
+            <div class="col">
+              <img src="wind-removebg-preview (1).png" alt="wind">
+              <p id="windspeed"></p>
+            </div>
+            <div class="col">
+              <img src="humidity-removebg-preview (1).png" alt="">
+              <p id="humidity"></p>
+            </div> 
+          </div>
+          <button class="history-button" onclick="redirectToPage()">Weather History of New York</button>
+          <script>
+            function redirectToPage() {
+            window.location.href = "/weather_data.php";
+            }
+          </script>
+        </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
